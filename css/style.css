@@ -1,0 +1,152 @@
+/* 
+------ Landing Page ------
+page Name : MICA-APP;
+Main Color : #575A89;
+Created by Khaled Mohamed 
+
+*/
+body {
+    font-family: Open Sans, sans-serif;
+}
+/* FreamWork*/
+.upper {
+    text-transform: uppercase;
+}
+/* Start Home Section*/
+section.home {
+    height: 100vh;
+    background-color: #575A89;
+    position: relative;
+    overflow-y: hidden;
+}
+section.home .bg-light {
+    background-color: transparent !important;
+    border-bottom:1px solid #ffffff30;
+}
+/* Start Navbar */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    transition: all ease 0.4s;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff80;
+}
+.navbar-light .navbar-brand {
+    font-size: 22px;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 14px;
+    font-weight:500;
+    letter-spacing: .5px;
+    padding: 0 25px;
+}
+/* End Navbar */
+
+/* Start Content Section */
+section.content {
+    color: #fff;
+}
+section.content h6 {
+    font-size: 16px;
+    letter-spacing: .5;
+}
+section.content h1 {
+    font-size: 48px;  
+}
+section.content a {
+    text-decoration: none;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    border: 1px solid #ffffff80;
+    color:#fff;
+    line-height: 58px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-top:60px;
+    transition: all ease 0.4s;
+}
+section.content a:hover {
+    background-color: #fff;
+    color: #575A89;
+}
+section.content .content-text {
+    padding-top :140px;
+}
+@media(max-width:991px) {
+    section.content .content-text {
+        width: 100%;
+        padding-top :70px;
+    }
+}
+section.content .content-img {
+    padding-top: 60px;
+}
+@media(max-width:991px) {
+    section.content .content-img {
+        width: 100%;
+        padding-top: 30px;
+    }
+}
+/* End Content Section */
+
+/* End Home Section*/
+
+/* Animation */
+section.home:before {
+    position: absolute;
+    content: '';
+    background: url(../img/wave-img.png) no-repeat;
+    bottom:0;
+    left: 0;
+    z-index: 999;
+    background-size: cover;
+    width: 100%;
+    height: 57px;
+    opacity: .2;
+    animation: waveone 7s linear infinite;
+}
+@keyframes waveone {
+    0%{
+        background-position: 1366px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+section.home:after {
+    position: absolute;
+    content: '';
+    background: url(../img/wave-img.png) no-repeat;
+    bottom:0;
+    left: 0;
+    z-index: 999;
+    background-size: cover;
+    width: 100%;
+    height: 57px;
+    opacity: .2;
+    animation: wavetow 7s linear infinite;
+}
+@keyframes wavetow {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1366px;
+    }
+}
+.wave {
+    position: absolute;
+    content: '';
+    background: url(../img/wave-img.png) no-repeat;
+    bottom:0;
+    left: 0;
+    z-index: 999;
+    background-size: cover;
+    width: 100%;
+    height: 57px;
+    opacity: .2;
+}
